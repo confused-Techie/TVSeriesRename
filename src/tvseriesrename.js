@@ -27,13 +27,11 @@ async function run(rawArg) {
           });
 
           if (response.config) {
-
-            console.log(`Renaming: ${filenames[i]}`);
+            logProgress(`Renaming: ${filenames[i]}`, options);
             fs.renameSync(`${options.dirname}${path.sep}${filenames[i]}`, `${options.dirname}${path.sep}${newFile}`);
           } else {
             // the user answer no to changing the filename.
-            console.log(`Sorry this couldn't help. You'll need to change ${filenames[i]} manually.`);
-
+            logProgress(`Sorry this couldn't help. You'll need to change ${filenames[i]} manually.`, options);
           }
         }
       }
@@ -45,6 +43,12 @@ async function run(rawArg) {
   } else {
     console.error("Something went wrong parsing Arguments, or accessing the specified folder.");
     process.exit(1);
+  }
+}
+
+function logProgress(msg, config) {
+  if (config.debug) {
+    console.log(msg);
   }
 }
 

@@ -23,3 +23,17 @@ Thats it, this can be a full path, or relative path. But there are some options 
 `--debug=true`
 
 Will set the debug flag to on, and will debug additional output to the screen.
+
+
+## Example
+
+This will take examples of the following:
+
+```
+Lost.s02e07.The Other 48 Days.mkv => S02E07.mkv
+Supernatural S12E16 - Ladies Drink Free.mkv => S12E16.mkv
+```
+
+## Uses
+
+This is intended for use of helping speed up the life of those that manage a Jellyfin Server Library Manually.

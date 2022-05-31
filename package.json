@@ -1,6 +1,6 @@
 {
   "name": "@confused-techie/tvseriesrename",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CLI App to Help Bulk Renaming of TV Series Files.",
   "scripts": {
     "test": "echo no test specified."
