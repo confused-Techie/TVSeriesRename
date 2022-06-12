@@ -37,3 +37,9 @@ Supernatural S12E16 - Ladies Drink Free.mkv => S12E16.mkv
 ## Uses
 
 This is intended for use of helping speed up the life of those that manage a Jellyfin Server Library Manually.
+
+## Change Log
+
+* Able to support Episodes up to three digits.
+
+* Special Support for the Original Doctor Who, due to the unlikely hood of them having standard names.

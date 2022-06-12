@@ -24,6 +24,9 @@ function parseArgv(rawArg) {
         } else {
           console.log(`Unable to Parse Debug Option: ${rawArg[i]}`);
         }
+      } else if (rawArg[i].startsWith("--method")) {
+        var opt = rawArg[i].split("=");
+        returnObj.method == opt[1];
       }
     }
 
