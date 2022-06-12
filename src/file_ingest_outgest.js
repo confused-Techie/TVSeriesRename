@@ -35,36 +35,6 @@ async function fileManipulation(filename, config) {
 
     }
 
-  } else if (config.method == "original_who") {
-    // added for my convienence.
-    var checks = [
-      {
-        for: [ "S01E01", "An Unearthly Child"],
-        to: "S01E01",
-      },
-      { for: [ "The Cave of Skulls" ], to: "S01E02" },
-      { for: [ "The Forest of Fear" ], to: "S01E03" },
-      { for: [ "The Firemaker"], to: "S01E04" },
-      
-    ];
-
-    var checkFor = function(orig, compare) {
-      for (var i = 0; i < compare.length; i++) {
-        if (orig.toLowerCase().includes(compare[i].toLowerCase())) {
-          return true;
-        }
-      }
-      return false;
-    };
-
-    for (var i = 0; i < checks.length; i++) {
-      if (checkFor(filename, checks[i].for)) {
-        // this is a match
-        return `${checks[i].to}.${fileExt}`;
-      }
-    }
-    return "";
-
   } else {
     // other options should be on this if else, but since permissive is all that exists.
     console.log(`Unrecognized Method: ${config.method}. Exiting...`);

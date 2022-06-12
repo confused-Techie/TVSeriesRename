@@ -38,8 +38,11 @@ Supernatural S12E16 - Ladies Drink Free.mkv => S12E16.mkv
 
 This is intended for use of helping speed up the life of those that manage a Jellyfin Server Library Manually.
 
+## Siblings
+
+### OriginalWhoRename
+Check out [OriginalWhoRename](https://github.com/confused-Techie/OriginalWhoRename) which is built specifically to help rename Classic Doctor Who Episodes for Jellyfin.
+
 ## Change Log
 
 * Able to support Episodes up to three digits.
-
-* Special Support for the Original Doctor Who, due to the unlikely hood of them having standard names.
